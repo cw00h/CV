@@ -1,0 +1,335 @@
+%-------------------------
+% Resume in Latex
+% Author : Sidratul Muntaha Ahmed
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\input{glyphtounicode}
+
+%\usepackage{helvet}
+%\renewcommand{\familydefault}{\sfdefault}
+\usepackage{mathpazo}
+%\usepackage{mathptmx}
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{\MakeUppercase}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\cveSubheading}[2]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+       #1 & #2 \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\taSubheading}[3]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+       #1 & #2 \\
+        \small#3 \\
+    \end{tabular*}\vspace{-3pt}
+}
+
+\newcommand{\pubSubheading}[4]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \vspace{2pt}
+      $\bullet$ \textbf{#1} \\ \vspace{2pt}
+      $\quad$ \small#2 \\
+      $\quad$ \textit{\small#3} 
+      #4 
+    \end{tabular*}\vspace{4pt}
+}
+
+\newcommand{\textheading}[3]{
+  \vspace{0pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \vspace{2pt}
+      $\bullet$ \textbf{#1} \\ \vspace{2pt}
+      $\quad$ \small#2 \\
+      $\quad$ \small#3
+    \end{tabular*}\vspace{4pt}
+}
+
+\newcommand{\resumeSubheading}[5]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\ \vspace{5pt}
+      \textit{\small#3} & \textit{\small #4} \\ 
+      #5 \\ \vspace{4pt}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[3]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \small#3
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+  \textbf{\Huge \scshape Woohyuk Choi} \textbf{ /  M.S} \\ \vspace{10pt}
+
+  Dept. of Electrical and Computer Engineering \\
+  Seoul National University \\
+  South Korea \\ \vspace{10pt}
+
+  \small Phone: (+82) 10-9173-4357 $|$ Mail:
+  \href{mailto:00cwooh@snu.ac.kr}{\underline{00cwooh@snu.ac.kr}} $|$
+  Lab: \href{https://compsec.snu.ac.kr}{\underline{CompSec at SNU}} \\
+  \vspace{5pt}
+  \textit{\small Last updated: September 26, 2025}
+\end{center}
+
+\vspace{15pt}
+%------About Me-------
+\section{About Me} 
+I am a graduate student in the Integrated M.S.-Ph.D. program in Electrical
+and Computer Engineering at Seoul National University, advised by Prof.
+Byoungyoung Lee.
+%
+I designed \textbf{Prompt Flow Integrity}, a system-level
+mitigation against prompt injection attacks in LLM agents,
+and my current research focuses on system-level defenses for
+web agents. 
+%
+In addition, I have hands-on experience in system security projects and
+vulnerability discovery, complementing my main focus on securing
+modern AI-driven systems.
+
+\vspace{10pt}
+
+%------RESEARCH INTERESTS-------
+\section{Research Interests}
+
+I am interested in \textbf{security for AI} and \textbf{system security}
+in general.
+%
+In particular, my research focuses on \textbf{AI agent security}, e.g., 
+system-level mitigation against prompt injection attacks.
+
+\vspace{10pt}
+
+
+
+%-----------Publication--------
+\section{Publications}
+\resumeSubHeadingListStart
+
+\pubSubheading
+{GHost in the SHELL: A GPU-to-Host Memory Attack and Its Mitigation}
+{Sihyun Roh, \textbf{Woohyuk Choi}, Jaeyoung Chung, Yoochan Lee, Suhwan Song and Byoungyoung Lee}
+{IEEE Symposium on Security and Privacy (SP) 2026 (accepted, to appear)}
+
+\pubSubheading
+{Prompt Flow Integrity to Prevent Privilege Escalation in LLM Agents}
+{\textbf{Woohyuk Choi*}, Juhee Kim*, and Byoungyoung Lee}
+{arXiv:2503.15547, 2025}
+{(* Equal contribution)}
+
+
+\resumeSubHeadingListEnd
+\vspace{0pt}
+
+% %-----------Experience--------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{Internship, Samsung MX (Mobile eXperience), Security Engineering Group}
+{Jan 2024 - Feb 2024}
+{Samsung MX, Suwon, South Korea}
+\resumeItemListStart
+\resumeItem{Developed and tested an eSE-based 
+Digital-Wallet Application for Samsung mobile devices.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{0pt}
+
+% %-----------Invited Talk--------
+% \section{Invited Talk}
+% \resumeSubHeadingListStart
+
+% \pubSubheading
+% {Towards Reliable Computer Systems with Fuzz and Differential Testing}
+% %{Presenter: Suhwan Song}
+% {UNIST. Apr 16, 2025}
+% {}
+
+% \resumeSubHeadingListEnd
+% \vspace{0pt}
+
+% % %-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Race Vulnerability Discovery in Linux Kernel Binder System Calls}}
+{Mar 2024 -- Current}
+{Platform Stability Committee (Governmental advisory board project)}
+\resumeItemListStart
+\resumeItem{Extended Syzkaller with concurrency-aware fuzzing techniques
+(inspired by Segfuzz, a kernel race fuzzer) to uncover race vulnerabilities
+in Android Binder syscalls.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{0pt}
+%
+% \section{Reported Vulnerabilities (selected)}
+% % CVE: description : CVSS
+
+% \resumeSubHeadingListStart
+% \cveSubheading
+% {\textbf{CVE-2022-4025: [\$3000] Chrome:} the contents of iframe is placed outside of 
+% iframe \\$\quad$when CSS ``column-width" is defined in main frame.}{}
+
+% \cveSubheading
+% {\textbf{CVE-2023-7281: [\$1000] Chrome:} Chromium illegally paints outside of iframe
+% when using \\$\quad$-webkit-box-reflect.}
+% {}
+
+% \cveSubheading
+% {\textbf{CVE-2023-7013: Chrome:} Chromium illegally paints outside of iframe
+% when using \\$\quad$-webkit-box-reflect.}
+% {}
+
+% \cveSubheading
+% {\textbf{CVE-2022-28286: [\$500] Firefox:} Firefox incorrectly draws outside of 
+% iframe because table \\$\quad$cell contents overflow table bounds.}{}
+
+% \cveSubheading
+% {\textbf{CVE-2022-45420: [\$500] Firefox:} iframe contents can be arbitrarily 
+% drawn outside of iframe \\$\quad$due to wrong stacking context.}{}
+
+
+% \resumeSubHeadingListEnd
+
+% \vspace{6pt}
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Seoul National University}{Mar 2025 - Present}
+{Seoul, South Korea}{}
+{Integrated M.S./Ph.D. in Electrical and Computer Engineering (Advisor: Byoungyoung Lee)}
+
+\resumeSubheading
+{Seoul National University}{Mar 2019 - Feb 2025}
+{Seoul, South Korea}{military service (2 years)}
+{B.S. in Electrical and Computer Engineering}
+{GPA: 3.95 (Major: 3.99)/4.30 (Summa Cum Laude)}
+
+\resumeSubHeadingListEnd
+
+
+\vspace{10pt}
+
+
+%------------SCHOLARSHIPS-----------
+\section{Scholarships}
+\resumeSubHeadingListStart
+\textheading
+{Electrical and Computer Engineering Foundation (Seoul National University), Full tuition support}
+{Sep 2025 - Present}
+
+\resumeSubHeadingListEnd
+\vspace{0pt}
+
+%-------------------------------------------
+%-----------TEACHING EXPERIENCE-----------
+\section*{\large Teaching Assistant}
+\vspace{5pt}
+\resumeSubHeadingListStart
+
+\taSubheading
+{\textbf{Programming Methodology (430.211)}}
+{Spring 2025}
+{Seoul National University}
+
+\resumeSubHeadingListEnd
+\end{document}
